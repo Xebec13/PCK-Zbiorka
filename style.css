@@ -251,7 +251,7 @@ body {
   align-items: center;
 }
 .contact .contact-form .form input {
-  width: 100%;
+  width: 50%;
 }
 
 .contact .contact-form .form input[type="text"] {
@@ -259,5 +259,4 @@ body {
   background: transparent;
   font-size: 1rem;
   text-decoration: underline;
-  background-color: pink;
 }
