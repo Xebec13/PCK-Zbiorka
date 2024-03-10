@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-right: 50px;
 }
 .nav-container ul.login li {
@@ -35,13 +35,18 @@ body {
   justify-content: flex-end;
   width: 90%;
   gap: 1.5rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .nav-container ul.navbar li:first-child a {
   border: 1px solid #333;
   padding: 10px 20px;
   text-align: center;
+  transition: 200ms ease-in-out;
+}
+.nav-container ul.navbar li:first-child a:hover {
+  background-color: #33333362;
+  color: white;
 }
 
 .main-container {
@@ -103,7 +108,6 @@ body {
   text-align: center;
   margin-right: 20px;
   margin-left: 20px;
-
 }
 .account-container .acc-header h1 {
   font-size: 2rem;
@@ -120,7 +124,6 @@ body {
   gap: 70px;
   padding: 20px;
   width: 80%;
-  
 }
 .account-container .offer-container .acc-offer img {
   width: 50px;
@@ -159,30 +162,102 @@ body {
 .about-container .about-decorator p {
   text-align: center;
 }
-.about-container .about-decorator span img{
+.about-container .about-decorator span img {
   width: 150px;
   margin-left: 30vw;
 }
-.about-container .about-img img{
+.about-container .about-img img {
   height: 50vh;
-  width: 45vw;
-  padding: 10px;
+  position: relative;
 }
 
-.about-container .about-decorator img{
+.about-container .about-decorator img {
   width: 15vw;
+}
+
+.acc-header {
+  width: 100%;
 }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .about-us .acc-header h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #2e2e2e;
+  margin-top: 45px;
+}
+
+.about-us .acc-header .acc-info p {
+  font-size: 1rem;
+  margin: 30px 0;
+  font-weight: 200;
+  color: rgb(78, 76, 76);
 }
 .about-us .acc-header .acc-decorator img {
-  width: 15vw;
+  width: 20vw;
+}
+
+.about-text .fundation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 25px;
+}
+
+.about-text .fundation-list .fundation-card {
+  flex: 1 0 48%;
+}
+
+.about-text .fundation-list .fundation-card h4,
+.about-text .fundation-list .fundation-card p {
+  text-align: center;
+  color: #2e2e2e;
+}
+.about-text .fundation-list .fundation-card h4 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+.about-text .fundation-list .fundation-card p {
+  font-size: 0.7rem;
+}
+
+.contact {
+  background-image: url(photo/footer-bg.jpg);
+  background-size: cover;
+  height: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .contact-form img {
+  width: 200px;
+}
+
+.contact .contact-form h4 {
+  font-size: 1.2rem;
+}
+.contact .contact-form {
+  text-align: center;
+  width: 50%;
+}
+.contact .contact-form .form {
+  display: inline-block;
+  
+  align-items: center;
+}
+.contact .contact-form .form input {
+  width: 100%;
+}
+
+.contact .contact-form .form input[type="text"] {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  text-decoration: underline;
+  background-color: pink;
 }
