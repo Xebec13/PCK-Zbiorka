@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -16,22 +16,17 @@
 <body>
     <!-- 🔵 DESKTOP NAVBAR (widoczny tylko od md w górę) -->
     <nav class="h-[10dvh] p-5 space-y-2 hidden md:block mb-5">
-        <!-- Panel logowania -->
         <div class="flex items-center justify-end space-x-2 text-xs cursor-pointer">
             <p>Zaloguj</p>
-            <p
-                class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
-                Załóż konto</p>
+            <p class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
+                Załóż konto
+            </p>
         </div>
-
-        <!-- Menu główne desktop -->
         <ul class="flex items-center justify-end space-x-5 text-s">
-            <li
-                class="border border-black py-1 px-3 hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in cursor-pointer">
+            <li class="border border-black py-1 px-3 hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in cursor-pointer">
                 <a href="#">Start</a>
             </li>
             <li class="hover-border cursor-pointer"><a href="#">O co chodzi?</a></li>
-
             <li class="hover-border cursor-pointer"><a href="#">O Nas</a></li>
             <li class="hover-border cursor-pointer"><a href="#">Fundacje i organizacje</a></li>
             <li class="hover-border cursor-pointer"><a href="#">Przekaż dar</a></li>
@@ -41,29 +36,19 @@
 
     <!-- 🔵 MOBILE NAVBAR (widoczny tylko na mobile) -->
     <nav class="p-5 text-right md:hidden">
-        <!-- Ikona hamburgera (otwieranie menu mobilnego) -->
         <div class="text-3xl cursor-pointer">
             <i class='bx bx-menu' id="menu-open"></i>
         </div>
-
-        <!-- Panel menu mobilnego (początkowo schowany) -->
         <div id="mobile-menu"
             class="fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-
-            <!-- Ikona X (zamykanie menu mobilnego) -->
             <div class="p-5 text-right text-3xl cursor-pointer">
                 <i class='bx bx-x' id="menu-close"></i>
             </div>
-
-            <!-- Linki menu mobilnego -->
             <ul class="flex flex-col items-center w-full justify-center text-center space-y-6 text-lg">
-                <!-- Panel logowania mobile -->
                 <div class="flex items-center justify-end space-x-2 text-xs cursor-pointer">
-                    <p
-                        class="border-2 border-yellow-400 p-1 bg-yellow-400 text-white hover:bg-white hover:text-black hover:scale-105 duration-300 ease-in">
+                    <p class="border-2 border-yellow-400 p-1 bg-yellow-400 text-white hover:bg-white hover:text-black hover:scale-105 duration-300 ease-in">
                         Zaloguj</p>
-                    <p
-                        class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
+                    <p class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
                         Załóż konto</p>
                 </div>
                 <li class="hover-border"><a href="#">Start</a></li>
@@ -76,187 +61,157 @@
         </div>
     </nav>
 
-    <!-- 🟡 HEADER (hero sekcja z obrazkiem i hasłem) -->
+    <!-- 🟡 HEADER (hero sekcja) -->
     <header class="h-[90dvh] p-5 flex flex-col-reverse md:flex-row items-center gap-5 justify-center">
-        <!-- Obrazek nagłówkowy -->
         <div class="w-full h-1/2 md:h-full rounded">
-            <img class="w-full h-full object-cover" src="assets/header-bg.jpg" alt="">
+            <img class="w-full h-full object-cover" src="assets/header-bg.jpg" alt="Hero header obrazek">
         </div>
-        <!-- Tekst nagłówka -->
         <div class="w-full text-5xl text-center italic font-extralight">
             <h1>Zacznij pomagać</h1>
             <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
             <div class="h-10">
-                <img class="w-full h-full" src="assets/decoration.svg" alt="">
+                <img class="w-full h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
             </div>
         </div>
     </header>
 
     <!-- ⚪️ SEKCJA STATYSTYK -->
     <div class="h-[50dvh] p-10 bg-yellow-500 text-center flex flex-col md:flex-row items-center justify-center gap-5">
-        <!-- 🔢 Liczba oddanych worków -->
         <div class="space-y-1">
             <p class="text-5xl font-bold">500+</p>
             <p class="text-2xl">Oddanych Worków</p>
-            <p class="">Twoje dary już znalazły drogę do potrzebujących i zmieniły życie wielu osób.</p>
+            <p>Twoje dary już znalazły drogę do potrzebujących i zmieniły życie wielu osób.</p>
         </div>
-        <!-- 🔢 Liczba wspartych organizacji -->
         <div class="space-y-1">
             <p class="text-5xl font-bold">130</p>
             <p class="text-2xl">Wspartych Organizacji</p>
-            <p class="">Wspieramy sprawdzone fundacje i organizacje, które codziennie niosą realną pomoc.</p>
+            <p>Wspieramy sprawdzone fundacje i organizacje, które codziennie niosą realną pomoc.</p>
         </div>
     </div>
 
     <!-- 🔴 MAIN (sekcja kroków) -->
     <main class="h-screen mt-10 p-10 space-y-5 flex flex-col items-center justify-center">
         <div class="text-center space-y-3">
-            <!-- Tytuł sekcji -->
             <h2 class="text-3xl md:text-5xl">
-                Wystarczą <span class="font-bold">4</span> proste kroki</h2>
-
-            <!-- Dekoracja pod tytułem -->
+                Wystarczą <span class="font-bold">4</span> proste kroki
+            </h2>
             <div class="h-10">
-                <img class="w-full h-full" src="assets/decoration.svg" alt="">
+                <img class="w-full h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
             </div>
         </div>
-
-        <!-- Lista kroków -->
-        <div
-            class="w-full h-[50vh] p-10 bg-gray-300 grid grid-cols-2 md:grid-cols-4 gap-5 place-items-center text-center">
-            <!-- Krok 1: wybór rzeczy -->
+        <div class="w-full h-[50vh] p-10 bg-gray-300 grid grid-cols-2 md:grid-cols-4 gap-5 place-items-center text-center">
             <div class="grid grid-rows-3 place-items-center">
                 <p class="text-s md:text-l underline whitespace-nowrap">1. Wybierz rzeczy</p>
                 <p class="text-xs md:text-s">Przygotuj ubrania i przedmioty</p>
-                <img class="size-10" src="./assets/icon-hands.png" alt="">
+                <img class="size-10" src="./assets/icon-hands.png" alt="Ikona wybierania rzeczy" loading="lazy">
             </div>
-
-            <!-- Krok 2: pakowanie -->
             <div class="grid grid-rows-3 place-items-center">
                 <p class="text-s md:text-l underline whitespace-nowrap">2. Spakuj je</p>
                 <p class="text-xs md:text-s">Umieść w przygotowanym worku</p>
-                <img class="size-10" src="./assets/icon-arrow.png" alt="">
+                <img class="size-10" src="./assets/icon-arrow.png" alt="Ikona pakowania" loading="lazy">
             </div>
-
-            <!-- Krok 3: wybór organizacji -->
             <div class="grid grid-rows-3 place-items-center">
                 <p class="text-s md:text-l underline whitespace-nowrap">3. Zdecyduj jak oddać</p>
                 <p class="text-xs md:text-s">Wybierz organizację lub fundację</p>
-                <img class="size-10" src="./assets/icon-glasses.png" alt="">
+                <img class="size-10" src="./assets/icon-glasses.png" alt="Ikona wyboru organizacji" loading="lazy">
             </div>
-
-            <!-- Krok 4: zamówienie kuriera -->
             <div class="grid grid-rows-3 place-items-center">
                 <p class="text-s md:text-l underline whitespace-nowrap">4. Zamów kuriera</p>
                 <p class="text-xs md:text-s">Kurier odbierze dary gratis</p>
-                <img class="size-10" src="./assets/icon-courier.png" alt="">
+                <img class="size-10" src="./assets/icon-courier.png" alt="Ikona kuriera" loading="lazy">
             </div>
         </div>
     </main>
+
     <!-- 🟢 SEKCJA "O NAS" -->
     <section class="h-screen p-10 bg-pink-300 flex flex-col md:flex-row justify-center items-center gap-2">
         <div class="md:w-1/2 flex flex-col ">
             <h1 class="text-3xl md:text-5xl">O nas</h1>
-            <!-- Dekoracja pod tytułem -->
             <div class="h-10">
-                <img class="h-full" src="assets/decoration.svg" alt="">
+                <img class="h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
             </div>
             <p class="text-l">
                 Działamy niezależnie od wieku, pochodzenia czy sytuacji życiowej osób, które wymagają wsparcia.
                 Prowadzimy zbiórki żywności, odzieży oraz akcje krwiodawstwa, ratując zdrowie i życie wielu ludzi.
                 Reagujemy także w sytuacjach kryzysowych, takich jak klęski żywiołowe, dostarczając niezbędną pomoc.
-                Wierzymy, że razem możemy zmieniać świat na lepsze i budować przyszłość opartą na solidarności.</p>
-            <div class="self-end w-1/4 md:w-1/2"><img src="./assets/signature.svg" alt=""></div>
+                Wierzymy, że razem możemy zmieniać świat na lepsze i budować przyszłość opartą na solidarności.
+            </p>
+            <div class="self-end w-1/4 md:w-1/2">
+                <img src="./assets/signature.svg" alt="Podpis" loading="lazy">
+            </div>
         </div>
         <div class="w-3/4 md:w-1/2">
-            <img class="md:object-cover rounded" src="./assets/about-us.jpg" alt="">
+            <img class="md:object-cover rounded" src="./assets/about-us.jpg" alt="O nas zdjęcie" loading="lazy">
         </div>
     </section>
+
+    <!-- Fundacje -->
     <section class="p-10 space-y-10">
-    <div class="flex flex-col justify-center items-center gap-2">
-        <h1 class="text-3xl md:text-5xl">Komu Pomagamy?</h1>
-        <div class="h-10">
-            <img class="h-full" src="assets/decoration.svg" alt="">
-        </div>
-        <p class="text-center text-l md:text-xl">
-            Pomagamy osobom w trudnej sytuacji życiowej, rodzinom, dzieciom, seniorom
-            oraz osobom chorym czy dotkniętym kryzysami. Wspieramy także społeczności dotknięte klęskami żywiołowymi i organizacje lokalne niosące codzienną pomoc.
-        </p>
-    </div>
-
-    <div class="text-center grid grid-cols-1 md:grid-cols-2 gap-5">
-        <!-- Fundacja 1 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Fundacja Wielkiej Pomocy</h4>
-            <p class="md:text-sm text-xs text-gray-600">Wspieramy rodziny w trudnej sytuacji życiowej, zapewniając żywność i odzież.</p>
+        <div class="flex flex-col justify-center items-center gap-2">
+            <h1 class="text-3xl md:text-5xl">Komu Pomagamy?</h1>
+            <div class="h-10">
+                <img class="h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
+            </div>
+            <p class="text-center text-l md:text-xl">
+                Pomagamy osobom w trudnej sytuacji życiowej, rodzinom, dzieciom, seniorom
+                oraz osobom chorym czy dotkniętym kryzysami. Wspieramy także społeczności dotknięte klęskami żywiołowymi i organizacje lokalne niosące codzienną pomoc.
+            </p>
         </div>
 
-        <!-- Fundacja 2 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Nadzieja dla Dzieci</h4>
-            <p class="md:text-sm text-xs text-gray-600">Pomagamy dzieciom z ubogich rodzin, organizując edukację i zajęcia dodatkowe.</p>
+        <div class="text-center grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Fundacje (h4 + opis) -->
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Fundacja Wielkiej Pomocy</h4>
+                <p class="md:text-sm text-xs text-gray-600">Wspieramy rodziny w trudnej sytuacji życiowej, zapewniając żywność i odzież.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Nadzieja dla Dzieci</h4>
+                <p class="md:text-sm text-xs text-gray-600">Pomagamy dzieciom z ubogich rodzin, organizując edukację i zajęcia dodatkowe.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Serce dla Seniora</h4>
+                <p class="md:text-sm text-xs text-gray-600">Opieka nad osobami starszymi i samotnymi, zapewniając im codzienne wsparcie.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Razem Możemy Więcej</h4>
+                <p class="md:text-sm text-xs text-gray-600">Inicjatywy lokalne na rzecz społeczności i integracji sąsiedzkiej.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Uśmiech Dziecka</h4>
+                <p class="md:text-sm text-xs text-gray-600">Zapewniamy zabawki, ubrania i wsparcie psychologiczne najmłodszym.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Zdrowie i Życie</h4>
+                <p class="md:text-sm text-xs text-gray-600">Finansujemy leczenie i rehabilitację osób przewlekle chorych.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Bezpieczny Dom</h4>
+                <p class="md:text-sm text-xs text-gray-600">Pomoc ofiarom przemocy domowej i tworzenie bezpiecznych schronisk.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Dar Serca</h4>
+                <p class="md:text-sm text-xs text-gray-600">Zbiórki odzieży i żywności dla osób bezdomnych i w kryzysie.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Wsparcie w Potrzebie</h4>
+                <p class="md:text-sm text-xs text-gray-600">Doraźna pomoc dla rodzin dotkniętych nagłymi trudnościami.</p>
+            </div>
+            <div>
+                <h4 class="md:text-xl text-sm font-semibold">Przyjaciele Człowieka</h4>
+                <p class="md:text-sm text-xs text-gray-600">Wspieramy osoby z niepełnosprawnościami w codziennym życiu.</p>
+            </div>
         </div>
+    </section>
 
-        <!-- Fundacja 3 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Serce dla Seniora</h4>
-            <p class="md:text-sm text-xs text-gray-600">Opieka nad osobami starszymi i samotnymi, zapewniając im codzienne wsparcie.</p>
-        </div>
-
-        <!-- Fundacja 4 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Razem Możemy Więcej</h4>
-            <p class="md:text-sm text-xs text-gray-600">Inicjatywy lokalne na rzecz społeczności i integracji sąsiedzkiej.</p>
-        </div>
-
-        <!-- Fundacja 5 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Uśmiech Dziecka</h4>
-            <p class="md:text-sm text-xs text-gray-600">Zapewniamy zabawki, ubrania i wsparcie psychologiczne najmłodszym.</p>
-        </div>
-
-        <!-- Fundacja 6 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Zdrowie i Życie</h4>
-            <p class="md:text-sm text-xs text-gray-600">Finansujemy leczenie i rehabilitację osób przewlekle chorych.</p>
-        </div>
-
-        <!-- Fundacja 7 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Bezpieczny Dom</h4>
-            <p class="md:text-sm text-xs text-gray-600">Pomoc ofiarom przemocy domowej i tworzenie bezpiecznych schronisk.</p>
-        </div>
-
-        <!-- Fundacja 8 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Dar Serca</h4>
-            <p class="md:text-sm text-xs text-gray-600">Zbiórki odzieży i żywności dla osób bezdomnych i w kryzysie.</p>
-        </div>
-
-        <!-- Fundacja 9 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Wsparcie w Potrzebie</h4>
-            <p class="md:text-sm text-xs text-gray-600">Doraźna pomoc dla rodzin dotkniętych nagłymi trudnościami.</p>
-        </div>
-
-        <!-- Fundacja 10 -->
-        <div>
-            <h4 class="md:text-xl text-sm font-semibold">Przyjaciele Człowieka</h4>
-            <p class="md:text-sm text-xs text-gray-600">Wspieramy osoby z niepełnosprawnościami w codziennym życiu.</p>
-        </div>
-    </div>
-</section>
-    <footer
-        style="background-image: url('./assets/footer-bg.jpg'); background-size: cover; background-position: center;"
+    <!-- FOOTER -->
+    <footer style="background-image: url('./assets/footer-bg.jpg'); background-size: cover; background-position: center;"
         class="h-[50dvh] p-10 w-full flex justify-end">
         <div class="w-1/2">
             <div class="flex flex-col items-center space-y-5">
                 <h3 class="text-2xl font-semibold">Skontaktuj się z nami</h3>
                 <div class="h-5">
-                    <img class="h-full" src="assets/decoration.svg" alt="">
+                    <img class="h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
                 </div>
-
-                <!-- Formularz kontaktowy -->
                 <form class="flex flex-col space-y-4 w-1/2 max-w-md">
                     <input type="text" placeholder="Imię"
                         class="p-2 rounded border-2 border-black focus:outline-none focus:ring-2 focus:ring-yellow-400">
@@ -264,16 +219,14 @@
                         class="p-2 rounded border-2 border-black focus:outline-none focus:ring-2 focus:ring-yellow-400">
                     <input type="email" placeholder="Adres e-mail"
                         class="p-2 rounded border-2 border-black focus:outline-none focus:ring-2 focus:ring-yellow-400">
-
                     <button class="border-2 p-2 bg-yellow-300 font-bold rounded hover:scale-105 duration-300 ease-in"
                         type="submit">Wyślij</button>
                 </form>
             </div>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
-
-
-<script src="script.js" defer></script>
 
 </html>
