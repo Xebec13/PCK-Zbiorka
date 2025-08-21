@@ -162,7 +162,7 @@ gsap.utils.toArray(".list").forEach((item, i) => {
 });
 gsap.fromTo(
   ".footerBg img",
-  { scale: 1.15 },     // delikatny start
+  { scale: 1 },     // delikatny start
   {
     scale: 1,       // zoom w trakcie scrolla
     transformOrigin: "100% 50%",
