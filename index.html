@@ -15,15 +15,17 @@
 
 <body>
     <!-- 🔵 DESKTOP NAVBAR (widoczny tylko od md w górę) -->
-    <nav class="h-[10dvh] p-5 space-y-2 hidden md:block mb-5">
+    <nav class="fixed top-0 right-0 w-full backdrop-blur-xl p-5 space-y-2 hidden md:block mb-5 z-5">
         <div class="flex items-center justify-end space-x-2 text-xs cursor-pointer">
             <p>Zaloguj</p>
-            <p class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
+            <p
+                class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
                 Załóż konto
             </p>
         </div>
         <ul class="flex items-center justify-end space-x-5 text-s">
-            <li class="border border-black py-1 px-3 hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in cursor-pointer">
+            <li
+                class="border border-black py-1 px-3 hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in cursor-pointer">
                 <a href="#">Start</a>
             </li>
             <li class="hover-border cursor-pointer"><a href="#">O co chodzi?</a></li>
@@ -35,7 +37,7 @@
     </nav>
 
     <!-- 🔵 MOBILE NAVBAR (widoczny tylko na mobile) -->
-    <nav class="p-5 text-right md:hidden">
+    <nav class="fixed top-0 right-0 p-5 text-right md:hidden z-2">
         <div class="text-3xl cursor-pointer">
             <i class='bx bx-menu' id="menu-open"></i>
         </div>
@@ -46,9 +48,11 @@
             </div>
             <ul class="flex flex-col items-center w-full justify-center text-center space-y-6 text-lg">
                 <div class="flex items-center justify-end space-x-2 text-xs cursor-pointer">
-                    <p class="border-2 border-yellow-400 p-1 bg-yellow-400 text-white hover:bg-white hover:text-black hover:scale-105 duration-300 ease-in">
+                    <p
+                        class="border-2 border-yellow-400 p-1 bg-yellow-400 text-white hover:bg-white hover:text-black hover:scale-105 duration-300 ease-in">
                         Zaloguj</p>
-                    <p class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
+                    <p
+                        class="border-2 border-yellow-400 p-1 hover:bg-yellow-400 hover:text-white hover:scale-105 duration-300 ease-in">
                         Załóż konto</p>
                 </div>
                 <li class="hover-border"><a href="#">Start</a></li>
@@ -62,13 +66,14 @@
     </nav>
 
     <!-- 🟡 HEADER (hero sekcja) -->
-    <header class="h-[90dvh] p-5 flex flex-col-reverse md:flex-row items-center gap-5 justify-center">
+    <header class="h-[100dvh] p-5 flex flex-col-reverse md:flex-row items-center gap-5 justify-center">
         <div class="w-full h-1/2 md:h-full rounded">
             <img class="w-full h-full object-cover" src="assets/header-bg.jpg" alt="Hero header obrazek">
         </div>
         <div class="w-full text-5xl text-center italic font-extralight">
             <h1>Zacznij pomagać</h1>
-            <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
+            <h1>Oddaj niechciane rzeczy </h1>
+            <h1>w zaufane ręce</h1>
             <div class="h-10">
                 <img class="w-full h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
             </div>
@@ -99,7 +104,8 @@
                 <img class="w-full h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
             </div>
         </div>
-        <div class="w-full h-[50vh] p-10 bg-gray-300 grid grid-cols-2 md:grid-cols-4 gap-5 place-items-center text-center">
+        <div
+            class="w-full h-[50vh] p-10 bg-gray-300 grid grid-cols-2 md:grid-cols-4 gap-5 place-items-center text-center step-section">
             <div class="grid grid-rows-3 place-items-center">
                 <p class="text-s md:text-l underline whitespace-nowrap">1. Wybierz rzeczy</p>
                 <p class="text-xs md:text-s">Przygotuj ubrania i przedmioty</p>
@@ -125,7 +131,7 @@
 
     <!-- 🟢 SEKCJA "O NAS" -->
     <section class="h-screen p-10 bg-pink-300 flex flex-col md:flex-row justify-center items-center gap-2">
-        <div class="md:w-1/2 flex flex-col ">
+        <div class="md:w-1/2 flex flex-col about-text">
             <h1 class="text-3xl md:text-5xl">O nas</h1>
             <div class="h-10">
                 <img class="h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
@@ -140,73 +146,87 @@
                 <img src="./assets/signature.svg" alt="Podpis" loading="lazy">
             </div>
         </div>
-        <div class="w-3/4 md:w-1/2">
-            <img class="md:object-cover rounded" src="./assets/about-us.jpg" alt="O nas zdjęcie" loading="lazy">
+        <div class="w-3/4 md:w-1/2 about-image-bg">
+            <img class="md:object-cover rounded about-image " src="./assets/about-us.jpg" alt="O nas zdjęcie"
+                loading="lazy">
         </div>
     </section>
 
     <!-- Fundacje -->
-    <section class="p-10 space-y-10">
-        <div class="flex flex-col justify-center items-center gap-2">
+    <section class="p-10 space-y-10 listContainer">
+        <div class="helpHeader flex flex-col justify-center items-center gap-2">
             <h1 class="text-3xl md:text-5xl">Komu Pomagamy?</h1>
             <div class="h-10">
                 <img class="h-full" src="assets/decoration.svg" alt="Dekoracja" loading="lazy">
             </div>
             <p class="text-center text-l md:text-xl">
                 Pomagamy osobom w trudnej sytuacji życiowej, rodzinom, dzieciom, seniorom
-                oraz osobom chorym czy dotkniętym kryzysami. Wspieramy także społeczności dotknięte klęskami żywiołowymi i organizacje lokalne niosące codzienną pomoc.
+                oraz osobom chorym czy dotkniętym kryzysami. Wspieramy także społeczności dotknięte klęskami żywiołowymi
+                i organizacje lokalne niosące codzienną pomoc.
             </p>
         </div>
 
         <div class="text-center grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- Fundacje (h4 + opis) -->
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Fundacja Wielkiej Pomocy</h4>
-                <p class="md:text-sm text-xs text-gray-600">Wspieramy rodziny w trudnej sytuacji życiowej, zapewniając żywność i odzież.</p>
+                <p class="md:text-sm text-xs text-gray-600">Wspieramy rodziny w trudnej sytuacji życiowej, zapewniając
+                    żywność i odzież.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Nadzieja dla Dzieci</h4>
-                <p class="md:text-sm text-xs text-gray-600">Pomagamy dzieciom z ubogich rodzin, organizując edukację i zajęcia dodatkowe.</p>
+                <p class="md:text-sm text-xs text-gray-600">Pomagamy dzieciom z ubogich rodzin, organizując edukację i
+                    zajęcia dodatkowe.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Serce dla Seniora</h4>
-                <p class="md:text-sm text-xs text-gray-600">Opieka nad osobami starszymi i samotnymi, zapewniając im codzienne wsparcie.</p>
+                <p class="md:text-sm text-xs text-gray-600">Opieka nad osobami starszymi i samotnymi, zapewniając im
+                    codzienne wsparcie.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Razem Możemy Więcej</h4>
-                <p class="md:text-sm text-xs text-gray-600">Inicjatywy lokalne na rzecz społeczności i integracji sąsiedzkiej.</p>
+                <p class="md:text-sm text-xs text-gray-600">Inicjatywy lokalne na rzecz społeczności i integracji
+                    sąsiedzkiej.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Uśmiech Dziecka</h4>
-                <p class="md:text-sm text-xs text-gray-600">Zapewniamy zabawki, ubrania i wsparcie psychologiczne najmłodszym.</p>
+                <p class="md:text-sm text-xs text-gray-600">Zapewniamy zabawki, ubrania i wsparcie psychologiczne
+                    najmłodszym.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Zdrowie i Życie</h4>
-                <p class="md:text-sm text-xs text-gray-600">Finansujemy leczenie i rehabilitację osób przewlekle chorych.</p>
+                <p class="md:text-sm text-xs text-gray-600">Finansujemy leczenie i rehabilitację osób przewlekle
+                    chorych.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Bezpieczny Dom</h4>
-                <p class="md:text-sm text-xs text-gray-600">Pomoc ofiarom przemocy domowej i tworzenie bezpiecznych schronisk.</p>
+                <p class="md:text-sm text-xs text-gray-600">Pomoc ofiarom przemocy domowej i tworzenie bezpiecznych
+                    schronisk.</p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Dar Serca</h4>
-                <p class="md:text-sm text-xs text-gray-600">Zbiórki odzieży i żywności dla osób bezdomnych i w kryzysie.</p>
+                <p class="md:text-sm text-xs text-gray-600">Zbiórki odzieży i żywności dla osób bezdomnych i w kryzysie.
+                </p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Wsparcie w Potrzebie</h4>
-                <p class="md:text-sm text-xs text-gray-600">Doraźna pomoc dla rodzin dotkniętych nagłymi trudnościami.</p>
+                <p class="md:text-sm text-xs text-gray-600">Doraźna pomoc dla rodzin dotkniętych nagłymi trudnościami.
+                </p>
             </div>
-            <div>
+            <div class="list">
                 <h4 class="md:text-xl text-sm font-semibold">Przyjaciele Człowieka</h4>
-                <p class="md:text-sm text-xs text-gray-600">Wspieramy osoby z niepełnosprawnościami w codziennym życiu.</p>
+                <p class="md:text-sm text-xs text-gray-600">Wspieramy osoby z niepełnosprawnościami w codziennym życiu.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer style="background-image: url('./assets/footer-bg.jpg'); background-size: cover; background-position: center;"
-        class="h-[50dvh] p-10 w-full flex justify-end">
-        <div class="w-1/2">
+    <footer class="footerParallax relative h-[50dvh] p-10 w-full flex justify-end" style="background: transparent;">
+        <div class="footerBg w-full h-full absolute bottom-0 right-0 -z-10 overflow-hidden">
+            <img src="./assets/footer-bg.jpg" alt="" class="w-full h-full object-cover will-change-transform">
+        </div>
+        <div class="w-1/2 relative z-10">
             <div class="flex flex-col items-center space-y-5">
                 <h3 class="text-2xl font-semibold">Skontaktuj się z nami</h3>
                 <div class="h-5">
@@ -225,7 +245,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="script.js" defer></script>
 </body>
 
