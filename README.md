@@ -33,9 +33,9 @@ The project showcases smooth GSAP animations, responsive navigation, and a clear
 Here’s how the website looks in action:  
 
 ### Hero + Steps
-![PCK Demo](/PCK-Zbiorka/assets/gifs/Pck.gif)
+![PCK Demo](./assets/gifs/Pck.gif)
 
 ### About + Footer
-![PCK Demo 2](/PCK-Zbiorka/assets/gifs/Pck2.gif)
+![PCK Demo 2](./assets/gifs/Pck2.gif)
 
    git clone https://github.com/yourusername/pck.git
