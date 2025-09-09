@@ -36,7 +36,7 @@ gsap.from("header h1", {
   delay: 0.3
 });
 
-gsap.utils.toArray(".h-\\[50dvh\\] .space-y-1").forEach((el, i) => {
+gsap.utils.toArray(".stat-item").forEach((el, i) => {
   gsap.to(el, {
     xPercent: 15 * (i % 2 === 0 ? -1 : 1), // lewy w prawo, prawy w lewo
     ease: "none",
