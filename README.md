@@ -6,7 +6,7 @@ The project showcases smooth GSAP animations, responsive navigation, and a clear
 > Built by **Xebec13**.
 
 ---
-[![Live Demo](https://img.shields.io/badge/Demo-Live-yellow?style=for-the-badge&logo=github&logoColor=black)](https://pck-fundation.netlify.app)
+[![Live](https://img.shields.io/badge/Demo-Live-yellow?style=for-the-badge&logo=github&logoColor=black)](https://pck-fundation.netlify.app)
 ## ✨ Features
 
 - 📱 **Responsive navigation** (desktop & mobile hamburger menu)
