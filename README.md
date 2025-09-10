@@ -1,5 +1,6 @@
 # ❤️ PCK — Charity Donation Platform
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://pck-fundation.netlify.app)
 A modern landing page for the **Polish Red Cross (PCK)-style donation platform**, built with **HTML, CSS (TailwindCSS CDN)**, and **vanilla JavaScript**.  
 The project showcases smooth GSAP animations, responsive navigation, and a clear donation flow.  
 
