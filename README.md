@@ -1,20 +1,23 @@
 # ❤️ PCK — Charity Donation Platform
+
 [![Live](https://img.shields.io/badge/Live-Website-yellow?style=for-the-badge&logo=vercel&logoColor=black)](https://pck-fundation.netlify.app)
+
 A modern landing page for the **Polish Red Cross (PCK)-style donation platform**, built with **HTML, CSS (TailwindCSS CDN)**, and **vanilla JavaScript**.  
 The project showcases smooth GSAP animations, responsive navigation, and a clear donation flow.  
 
 > Built by **Xebec13**.
 
 ---
+
 ## ✨ Features
 
-- 📱 **Responsive navigation** (desktop & mobile hamburger menu)
-- 🎬 **GSAP animations** (hero, scroll-triggered sections, parallax effects)
-- 📊 **Statistics section** highlighting impact (donated bags & supported organizations)
-- 🔄 **Step-by-step donation flow** (4 clear illustrated steps)
-- 🧑‍🤝‍🧑 **About section** with parallax image reveal
-- 🏛️ **Foundations list** with staggered scroll animations
-- 📩 **Contact form in footer** with focus & hover effects
+- 📱 **Responsive navigation** (desktop & mobile hamburger menu)  
+- 🎬 **GSAP animations** (hero, scroll-triggered sections, parallax effects)  
+- 📊 **Statistics section** highlighting impact (donated bags & supported organizations)  
+- 🔄 **Step-by-step donation flow** (4 clear illustrated steps)  
+- 🧑‍🤝‍🧑 **About section** with parallax image reveal  
+- 🏛️ **Foundations list** with staggered scroll animations  
+- 📩 **Contact form in footer** with focus & hover effects  
 
 ---
 
